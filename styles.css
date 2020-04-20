@@ -1,1 +1,24 @@
 @import "reset.css";
+
+.weather__container {
+  display: flex;
+}
+
+.weather__div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 500px;
+  background-color: blue;
+}
+
+.weather__temp {
+  color: #ffffff;
+}
+
+.weather__place {
+  color: #ffffff;
+  margin-left: 4px;
+  font-weight: 600;
+}
