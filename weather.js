@@ -48,15 +48,16 @@ const getWeather = () => {
         const weatherDiv = document.createElement("div");
         const weatherTemp = document.createElement("span");
         const weatherPlace = document.createElement("span");
-        const weatherImg = document.createElement("image");
+        const weatherImg = document.createElement("img");
         weatherDiv.classList.add("weather__div");
         weatherImg.classList.add("weather__image");
         weatherTemp.classList.add("weather__temp");
         weatherPlace.classList.add("weather__place");
         weatherContainer.append(weatherDiv);
-        weatherDiv.append(weatherImg);
         weatherDiv.append(weatherTemp);
         weatherDiv.append(weatherPlace);
+        weatherDiv.append(weatherImg);
+        weatherImg.src = `images/${Object.keys(koreaPlace)[i]}.jpg`;
         weatherPlace.innerText = Object.keys(koreaPlace)[i];
         weatherTemp.innerText = `${temperature}℃`;
       });
