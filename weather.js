@@ -59,7 +59,7 @@ const getWeather = () => {
         weatherDiv.append(weatherImg);
         weatherImg.src = `images/${Object.keys(koreaPlace)[i]}.jpg`;
         weatherPlace.innerText = Object.keys(koreaPlace)[i];
-        weatherTemp.innerText = `${temperature}℃`;
+        weatherTemp.innerText = `${temperature.toFixed(1)}℃`;
       });
   }
 };
